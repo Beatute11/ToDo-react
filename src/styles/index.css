@@ -1,0 +1,193 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.todo-list {
+    height: 650px;
+    width: 900px;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 6px 20px rgba(149, 76, 46);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.user-input {
+    background-color: #954C2E;
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+}
+
+input {
+    width: 90%;
+    margin: 5px;
+    padding: 10px;
+    font-size: 18px;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.1s ease;
+}
+
+input:focus {
+    outline:none;
+    box-shadow:0 0 10px #9ecaed;
+}
+
+.add-button{
+    background-color: #DEFF8B;
+}
+.add-button:hover{
+    background-color: #8CBA51;
+    scale: 1.2;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filter button {
+    background-color: #FFFFFF;
+    font-size: 12px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.filter button.active {
+    background-color: #9ecaed;
+    color: black;
+}
+
+button {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.complete-btn {
+    display: block;
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.complete-btn input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 2px;
+    height: 25px;
+    width: 25px;
+    background-color: #FFFFFF;
+}
+
+.complete-btn:hover input ~ .checkmark {
+    background-color: #CCCCCC;
+}
+
+.complete-btn input:checked ~ .checkmark {
+    background-color: #FFFFFF;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.complete-btn input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.complete-btn .checkmark:after {
+    left: 10px;
+    bottom: 7px;
+    width: 10px;
+    height: 20px;
+    border: solid #8CBA51;
+    border-width: 0 5px 5px 0;
+    transform: rotate(45deg);
+}
+
+.delete-btn {
+    background-color: #FBCEB5;
+}
+.delete-btn:hover{
+    background-color: #FF5D6C;
+}
+
+ol {
+    max-height: 380px;
+    overflow-y: auto;
+    border-radius: 10px;
+    align-items: center;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #954C2E;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    border: 3px solid #FBCEB5;
+    border-radius: 10px;
+    animation: fadeIn 0.3s ease;
+}
+
+.text{
+    flex: 1;
+}
+
+.text.completed {
+    text-decoration: line-through;
+    color: #EFE4D2;
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
