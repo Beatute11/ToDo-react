@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 
 // importing image for delete-btn
-import trashIcon from './assets/trash.png';
+import trashIcon from '../assets/trash.png';
 
 function ToDoList() {
     // tasks - array of task objects { text: string, completed: boolean }

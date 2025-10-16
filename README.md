@@ -30,4 +30,4 @@ git clone https://github.com/Beatute11/ToDo-react.git
 ```bash
 npm run dev
 ```
-- Then open the link shown in your terminal (localhost) 
+- Then open the link shown in your terminal (localhost:) 
