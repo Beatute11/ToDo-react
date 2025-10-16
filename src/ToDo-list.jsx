@@ -1,6 +1,9 @@
 // importing necessary React hooks
 import React, { useState, useEffect } from 'react';
 
+// importing image for delete-btn
+import trashIcon from './assets/trash.png';
+
 function ToDoList() {
     // tasks - array of task objects { text: string, completed: boolean }
     // the initial value is loaded from localStorage (if available)
@@ -115,7 +118,7 @@ function ToDoList() {
                          {/* delete button with trash image */}
                         <button
                             className="delete-btn" onClick={() => deleteTask(index)}>
-                            <img src={`${import.meta.env.BASE_URL}trash.png`} alt="Delete" width="20"/>
+                            <img src={trashIcon} alt="Delete" width="20" />
                         </button>
                     </li>
                 ))}

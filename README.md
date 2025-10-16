@@ -7,9 +7,6 @@ with **React** and styled using **CSS**.
 
 [Link to the project](https://beatute11.github.io/ToDo-react/)
 
-#### Note:
-The original project has an image on "delete" button and when publishes on github-pages, the Image is gone.
-
 ## Features:
 - Add new tasks
 - Mark tasks as completed
