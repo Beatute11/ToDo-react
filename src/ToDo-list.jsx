@@ -115,7 +115,7 @@ function ToDoList() {
                          {/* delete button with trash image */}
                         <button
                             className="delete-btn" onClick={() => deleteTask(index)}>
-                            <img src="src\assets\trash.png" alt="Delete" width="20" /> 
+                            <img src="trash.png" alt="Delete" width="20" /> 
                         </button>
                     </li>
                 ))}

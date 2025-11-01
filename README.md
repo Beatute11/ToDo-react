@@ -7,9 +7,6 @@ with **React** and styled using **CSS**.
 
 [Link to the project](https://beatute11.github.io/ToDo-react/)
 
-> **_NOTE:_**  The original project has a trash icon as the delete-button,
-> but when publishes on github-pages, the .png file is not showed.
-
 ## Features:
 - Add new tasks
 - Mark tasks as completed
