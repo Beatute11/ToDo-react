@@ -3,7 +3,7 @@
 A modern, minimalistic **To-Do List** built
 with **React** and styled using **CSS**.
 
-[Main page](public/img.png)
+[Main page](public/main.png)
 
 [Link to the project](https://beatute11.github.io/ToDo-react/)
 
@@ -17,6 +17,7 @@ with **React** and styled using **CSS**.
 - Filter between All / Done / Not Done
 - Automatically saves data to localStorage
 - Simple design
+- Responsive design (780px)
 
 ## Installation
 
